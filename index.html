@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jokebook</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Jokebook</h1>
+
+<!-- Form to add a new joke -->
+<form id="jokeForm">
+  <label for="category">Category:</label>
+  <select id="category" name="category">
+    <!-- Options will be populated dynamically from JavaScript -->
+  </select><br>
+  <label for="joke">Joke:</label>
+  <input type="text" id="joke" name="joke"><br>
+  <label for="response">Response:</label>
+  <input type="text" id="response" name="response"><br>
+  <button type="submit">Add Joke</button>
+</form>
+
+<!-- Dropdown to select joke categories -->
+<label for="categoryList">Select Category:</label>
+<select id="categoryList" name="categoryList">
+  <!-- Options will be populated dynamically from JavaScript -->
+</select>
+
+<!-- Container to display jokes -->
+<div id="jokesContainer"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
